@@ -1,9 +1,9 @@
 class: middle, center
 
-### CloudInsight
-## 前端 DevOps 实践经验
+## 小创公司如何提升前端开发效率
+#### .text-muted[Cloudinsight 前端 DevOps 分享]
 
-王龑
+王龑 2016/05/35
 
 ???
 
@@ -13,13 +13,27 @@ class: middle, center
 - 我在做什么
 - 我今天要分享的东西
 ---
+
+# 分享内容
+
+- 如何形成 DevOps 文化
+- 优化环境
+- 提升开发效率
+- 减少运维的工作量
+- 监控和数据驱动
+
+---
 class: middle, center
 
-# 文化
+# 如何形成 DevOps 文化
 
 ---
 
-# 明确 DevOps 的目的
+[图片]
+
+---
+
+# DevOps 的目的
 
 - 促进软件的开发, 按时交付
 - 关注过程、工具
@@ -39,6 +53,7 @@ class: middle, center
 - 演示自己的成果
 - 公开的代码审查
 - 发布完后的反思会
+- 自己一定要用自己的产品
 
 ---
 class: middle, center
@@ -55,7 +70,11 @@ class: middle, center
 ---
 class: middle, center
 
-# 环境
+# 优化环境
+
+---
+
+[图片]
 
 ---
 
@@ -74,6 +93,14 @@ class: middle, center
 - `Linux`
 
 \* 在基础设施(仓库, 网络)完善的情况下尝试 `Docker`
+
+---
+
+# 纯前端项目有没有必要使用 `Docker`
+
+程序
+
+数据
 
 ---
 
@@ -98,7 +125,6 @@ class: middle, center
 |机器少,但是性能强劲     | `VirtualBox` 或者 `ESX`    |
 |预算有限, 运维少        | 青云, 阿里云                 |
 |预算充足, 运维强        | 自建集群,内部的 IaaS 系统     |
-
 
 
 ---
@@ -154,7 +180,8 @@ return (
 
 ---
 
-# 使用打包工具
+# 发布代码
+## 使用打包工具
 
 遵循 `单一职责` 和 `开闭原则` 等, 尽情地去新建 `JS` 文件,
 因为最后都会被压缩到一个文件里。
@@ -205,7 +232,7 @@ class: middle, center
 - 前端静态资源几乎不需要服务器管理人员。
 - 存储非常便宜, 持续部署, 动态切换
 
-`CloudInsight` 相关数据
+`Cloudinsight` 相关数据
 
 ---
 
@@ -261,7 +288,7 @@ OneAPM
 
 .badge[平台和服务监控]
 
-Zabbix, CloudInsight
+Zabbix, Cloudinsight
 
 .badge[用户体验监控]
 
@@ -271,3 +298,7 @@ OneAPM BI
 
 Google Analaytics, 百度统计, GrowingIO
 
+---
+class: middle, center
+
+# 谢谢
